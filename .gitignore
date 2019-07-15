@@ -1,3 +1,7 @@
 .cpcache
 .nrepl-port
-credentials.json
+client_id.json
+*.iml
+*.log
+.idea
+tokens/*
