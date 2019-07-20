@@ -5,3 +5,6 @@ client_id.json
 *.log
 .idea
 tokens/*
+/.java-version
+out
+resources/public/js
