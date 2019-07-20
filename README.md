@@ -12,3 +12,10 @@ Before the first time you run the app you need to create a *client_id.json* file
 
 Once it is in place, it will the first time (and each time the token is expired) open a browser window to let you authorize the app at Google to allow access to the calendar. It listens on a temporary port and saves the token in the tokens folder.
 
+## Clojurescript support
+
+I used the [blogpost of Christian Johansen](https://cjohansen.no/tools-deps-figwheel-main-devcards-emacs/) to get my setup in order and working with emacs and firefox.
+
+I could not get to work with chrome on my Ubuntu box so changed the default browser to firefox.
+
+It also supports  devcards of which I heard, but never tried.
