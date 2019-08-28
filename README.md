@@ -19,3 +19,12 @@ I used the [blogpost of Christian Johansen](https://cjohansen.no/tools-deps-figw
 I could not get to work with chrome on my Ubuntu box so changed the default browser to firefox.
 
 It also supports  devcards of which I heard, but never tried.
+
+Devcards allow small snippets of functionality to be displayed:
+- test components
+- make pages to show components in all states
+- interact with loose components
+- run tests in browser and report on them
+- styleguide and components gallery
+
+It looks like a real awesome extension to the REPL but in the Web UI

@@ -10,3 +10,4 @@
   (.fill ctx))
 
 (draw-shape 150 150 100 "blue")
+(draw-shape 300 200 50 "red")

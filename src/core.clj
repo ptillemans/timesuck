@@ -1,7 +1,8 @@
 (ns core
   (:require [gitlab]
             [mongo]
-            [gcal]))
+            [gcal])
+  (:import [java.util Date]))
 
 
 (defn fetch-gitlab-events

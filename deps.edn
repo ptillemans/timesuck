@@ -9,6 +9,13 @@
         cheshire                                          {:mvn/version "5.8.1"}
         clj-gitlab                                        {:mvn/version "0.1.0"}
         com.novemberain/monger                            {:mvn/version "3.1.0"}}
- :aliases {:dev {:extra-paths ["resources" "devcards"]
+ :aliases {:dev {:extra-paths ["resources" "devcards" "test"]
                  :extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.0-SNAPSHOT"}
-                              devcards {:mvn/version "0.2.6"}}}}}
+                              devcards {:mvn/version "0.2.6"}
+                              com.bhauman/cljs-test-display {:mvn/version "0.1.1"}}}
+           :repl {:extra-deps {com.bhauman/rebel-readline {mvn/version "0.1.4"}}
+                  :main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
+           :test {:extra-paths ["test"]
+                  :extra-deps {lambdaisland/kaocha {:mvn/version "0.0-367"}
+                               lambdaisland/kaocha-cljs {:mvn/version "0.0-16"}}
+                  :main-opts ["-m" "kaocha.runner" "unit-cljs"]}}}

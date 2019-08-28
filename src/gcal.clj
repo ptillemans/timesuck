@@ -25,15 +25,7 @@
 (def http (GoogleNetHttpTransport/newTrustedTransport))
 
 (defn get-credentials
-  ;; (final NetHttpTransport HTTP_TRANSPORT)
   []
-  ;;InputStream in = CalendarQuickstart.class.getResourceAsStream (CREDENTIALS_FILE_PATH) ;
-  ;;if (in == null)
-  ;{
-  ; throw new FileNotFoundException ("Resource not found: " + CREDENTIALS_FILE_PATH) ;
-  ; }
-  ;GoogleClientSecrets clientSecrets = GoogleClientSecrets.load (JSON_FACTORY, new InputStreamReader (in)) ;
-
   (let [secrets (with-open [r (io/reader credential-file-path)]
                   (GoogleClientSecrets/load json-factory r))
         token-store (FileDataStoreFactory. (File. tokens-dir))
@@ -82,7 +74,6 @@
                            (.events)
                            (.list "primary")
                            (.setPageToken page)
-                           ;                           (.setMaxResults (int 100))
                            (.setTimeMin from)
                            (.setTimeMax till)
                            (.setOrderBy "startTime")
