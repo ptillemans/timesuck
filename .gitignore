@@ -5,8 +5,8 @@ client_id.json
 *.log
 .idea
 tokens/*
-/.java-version
+.java-version
 out
 resources/public/js
 target
-/.cljs_node_repl/cljs/core.cljs
+.cljs_node_repl
