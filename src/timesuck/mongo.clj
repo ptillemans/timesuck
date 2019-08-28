@@ -1,4 +1,4 @@
-(ns mongo
+(ns timesuck.mongo
   (:require [monger.core :as mg]
             [monger.collection :as mc])
   (:import (org.bson.types ObjectId)))

@@ -8,3 +8,4 @@ tokens/*
 /.java-version
 out
 resources/public/js
+target
