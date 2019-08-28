@@ -1,4 +1,4 @@
-(ns gitlab
+(ns timesuck.gitlab
   (:require [clojure.java.io :as io]
             [clojure.edn :as edn]
             [cheshire.core :refer :all]
@@ -33,9 +33,7 @@
 
 (defn parse-response [response]
   (parse-string
-    (get response :body) true))
-
-
+   (get response :body) true))
 
 (defn url-get-paginated
   [url options results]
@@ -57,7 +55,6 @@
 (defn api-get
   ([endpoint]
    (flatten (api-raw-get endpoint))))
-
 
 (defn user-events-after
   [user after]

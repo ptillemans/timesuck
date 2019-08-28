@@ -1,4 +1,4 @@
-(ns gcal
+(ns timesuck.gcal
   (:require [clojure.java.io :as io]
             [clojure.walk :refer :all]
             [cheshire.core :refer :all])
